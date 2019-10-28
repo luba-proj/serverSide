@@ -11,7 +11,7 @@ namespace WebAPI.Services
 {
     public class DbService : IDbService
     {
-        private static readonly string _conn = "Server=DESKTOP-CC4Q17M; Database=Youtube;Trusted_Connection=True;MultipleActiveResultSets=true";
+        private static readonly string _conn = "Server=tcp:luba.database.windows.net,1433;Initial Catalog=Youtubedb;Persist Security Info=False;User ID=luba;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private readonly SqlConnection sqlCon = new SqlConnection(_conn);
         public DbService()
         {
